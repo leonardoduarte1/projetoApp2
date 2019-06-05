@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProjetoApp2</string>
+    <string name="texto_login">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque orci eros, porta a nisl
+        at, sagittis maximus sapien.
+    </string>
+
+</resources>
