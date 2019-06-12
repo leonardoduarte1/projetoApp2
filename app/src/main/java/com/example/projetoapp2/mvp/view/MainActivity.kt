@@ -1,12 +1,13 @@
-package com.example.projetoapp2
+package com.example.projetoapp2.mvp.view
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.projetoapp2.mvp.Home.MainContract
-import com.example.projetoapp2.mvp.Home.MainPresenter
+import com.example.projetoapp2.R
+import com.example.projetoapp2.mvp.contract.MainContract
+import com.example.projetoapp2.mvp.presenter.MainPresenter
 
 class MainActivity : AppCompatActivity(), MainContract.View {
 

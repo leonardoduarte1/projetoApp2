@@ -1,7 +1,8 @@
-package com.example.projetoapp2
+package com.example.projetoapp2.mvp.view
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.projetoapp2.R
 
 class CalendarioActivity : AppCompatActivity() {
 

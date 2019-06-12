@@ -1,7 +1,12 @@
-package com.example.projetoapp2.mvp.Login
+package com.example.projetoapp2.mvp.presenter
 
-class LoginPresenter(private val view : LoginContract.View) : LoginContract.Presenter {
+import com.example.projetoapp2.mvp.contract.LoginContract
+import com.example.projetoapp2.mvp.model.LoginModel
 
+class LoginPresenter(private val view : LoginContract.View) :
+    LoginContract.Presenter {
+
+    private var model: LoginContract.Model = LoginModel()
     /**
      * No Presenter podemos definir um método comum a todas as camadas
      * Aqui podemos fazer o Bind das views necessárias na Activity
@@ -19,7 +24,7 @@ class LoginPresenter(private val view : LoginContract.View) : LoginContract.Pres
         if(userName.isEmpty() || password.isEmpty()) {
             view.displayErrorMessage()
         } else {
-            if(password == "teste" && userName == "teste") {
+            if(model.autenticar(userName, password)) {
                 view.displaySucessToast()
                 view.startHomeActivity()
             }else {
